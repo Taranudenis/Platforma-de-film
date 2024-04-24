@@ -1,0 +1,52 @@
+/* 
+body {
+    font-family: Arial, sans-serif;
+  }
+  #movies-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  #movies-list li {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #movies-list li img {
+    width: 100%;
+    height: auto;
+  }
+  #search-bar {
+    margin-bottom: 20px;
+  } */
+  /* Stilurile generale */
+body {
+    font-family: Arial, sans-serif;
+}
+
+#movies-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#movies-list li {
+    margin-bottom: 20px;
+    width: calc(50% - 10px); /* Așezăm două filme pe linie */
+    max-width: 400px;
+}
+
+#movies-list li img {
+    width: 100%;
+    height: auto;
+}
+
+/* Stilurile pentru rezoluții mai mici */
+@media only screen and (max-width: 768px) {
+    #movies-list li {
+        width: calc(100% - 10px); /* Așezăm un singur film pe linie */
+    }
+}
